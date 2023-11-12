@@ -28,3 +28,6 @@ b { color: #1478FF }
 - <r>_Q)_</r> 자료를 add() 할때마다 equal(), hashCode() method 를 이용하여 중복 여부를 체크 한다는 의미겠지???? 그렇다면 성능이....
 
 #### java.util.Iterator 인터페이스
+
+- java.util.Iterator 인터페이스는 자료구조에서 <b>_자료를 꺼내기 위한 목적으로 사용되는 인터페이스_</b>이다.
+- Iterator 패턴을 구현하고 있다.
