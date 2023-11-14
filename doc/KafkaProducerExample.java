@@ -9,6 +9,7 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.function.Consumer;
 
 public class KafkaProducerExample {
@@ -44,8 +45,21 @@ public class KafkaProducerExample {
             @Override
             public void onFailure(Throwable ex) {
                 onFailure.accept(ex);
+
+                if (ex instanceof TimeoutException) {
+                    /* TODO */
+                }
             }
         });
+    }
+
+    public static Throwable findCauseUsingPlainJava(Throwable throwable) {
+        Objects.requireNonNull(throwable);
+        Throwable rootCause = throwable;
+        while (rootCause.getCause() != null && rootCause.getCause() != rootCause) {
+            rootCause = rootCause.getCause();
+        }
+        return rootCause;
     }
 
     public static void main(String[] args) {

@@ -41,3 +41,15 @@ b { color: #1478FF }
 - Error: 수습할 수 없는 심각한 오류
 - Exception(예외): 예외 처리를 통해 수습할 수 있는 덜 심각한 오류
 - 메모리 부족, Stack overflow 등이 발생하여 프로그램이 죽는 것은 프로그래머가 제어할 수 없다.
+
+## DI (Dependency Injection)
+
+- 부품을 조립해준다.
+- class 를 조립해준다.
+- Setter Injection
+- Construction Injection
+- Spring 이 알아서 Injection 을 해준다.
+
+## IoC (Inversion of Control) 컨테이너
+
+-
