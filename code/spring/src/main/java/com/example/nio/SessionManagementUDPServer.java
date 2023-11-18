@@ -26,7 +26,6 @@ public class SessionManagementUDPServer {
 
             channel.closeFuture().sync();
         } finally {
-            System.out.println("end");
             group.shutdownGracefully();
         }
     }
