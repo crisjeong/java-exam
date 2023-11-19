@@ -67,6 +67,11 @@ b { color: #1478FF }
 - 추상클래스
 - char 단위 입출력 클래스는 모두 Reader, Writer 의 후손이다.
 
+### 패턴
+
+- Decorator 패턴
+- Composition 패턴
+
 ## DI (Dependency Injection)
 
 - 부품을 조립해준다.
