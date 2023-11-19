@@ -49,6 +49,24 @@ b { color: #1478FF }
 - 입력은 키보다, 네트웤, 파일 등으로부터 받을 수 있다.
 - 출력은 화면, 네트웤, 파일 등에 할 수 있다.
 
+## File 클래스
+
+- java.io.File 클래스는 파일의 크기, 파일의 접근 권한, 파일의 삭제, 파일 이름 변경 등의 작업을 할 수 있는 기능을 제공하여 준다.
+- 주의해야 할 것은 디렉토리(폴더) 역시 파일로써 취급된다.
+- 파일 인스턴스를 만들었다고, 실제 폴더에 팡리이 생선되는건 아니다.
+
+## Stream
+
+#### InputStream, OutputStream
+
+- 추상클래스
+- byte 단위 입출력 클래스는 모두 InputStream, OutputStream 의 후손이다.
+
+#### Reader, Writer
+
+- 추상클래스
+- char 단위 입출력 클래스는 모두 Reader, Writer 의 후손이다.
+
 ## DI (Dependency Injection)
 
 - 부품을 조립해준다.
